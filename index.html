@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +9,120 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.42.1/dist/full.css" rel="stylesheet" type="text/css" />
   <title>shopping with js</title>
 </head>
+
 <body>
-<header>
-    <div class="btm-nav">
-        <button class="bg-pink-200 text-pink-600">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
-          <span class="btm-nav-label">Home</span>
-        </button>
-        <button class="active bg-neutral text-neutral-content">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-          <span class="btm-nav-label">Shopping with js</span>
-        </button>
-        <button class="bg-teal-200 text-teal-600">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
-          <span class="btm-nav-label">Statics</span>
-        </button>
+  <header>
+    <div class="btm-nav z-10">
+      <button class="bg-pink-200 text-pink-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+        </svg>
+        <span class="btm-nav-label">Home</span>
+      </button>
+      <button class="active bg-neutral text-neutral-content">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <span class="btm-nav-label">Shopping with js</span>
+      </button>
+      <button class="bg-teal-200 text-teal-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+        </svg>
+        <span class="btm-nav-label">Statics</span>
+      </button>
+    </div>
+  </header>
+  <main>
+    <section class="w-9/12 mx-auto mt-10 mb-40">
+      <div class="grid grid-cols-2 gap-4 divide-x">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure><img class="w-full h-40" src="https://i.etsystatic.com/38918159/r/il/cd4b62/4349749978/il_340x270.4349749978_5e4h.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Coffe js</h2>
+              <p>Price: $<span>130</span></p>
+              <div class="card-actions justify-end">
+                <button onclick="addToCart(this)" class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure><img class="w-full h-40" src="https://res.cloudinary.com/teepublic/image/private/s--eCn6hhEt--/t_Resized%20Artwork/c_fit,g_north_west,h_954,w_954/co_191919,e_outline:48/co_191919,e_outline:inner_fill:48/co_ffffff,e_outline:48/co_ffffff,e_outline:inner_fill:48/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_auto,h_630,q_90,w_630/v1509628922/production/designs/2018878_1.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Heart js</h2>
+              <p>Price: $<span>120</span></p>
+              <div class="card-actions justify-end">
+                <button onclick="addToCart(this)" class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure><img class="w-full h-40" src="https://www.datocms-assets.com/45470/1631110818-logo-react-js.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">React js</h2>
+              <p>Price: $<span>150</span></p>
+              <div class="card-actions justify-end">
+                <button onclick="addToCart(this)" class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure><img class="w-full h-40" src="http://umbrellajs.com/umbrella.png?1" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Umbrella js</h2>
+              <p>Price: $<span>105</span></p>
+              <div class="card-actions justify-end">
+                <button onclick="addToCart(this)" class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure><img class="w-full h-40" src="https://ih1.redbubble.net/image.393347413.1344/st,small,845x845-pad,1000x1000,f8f8f8.u5.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Vue js</h2>
+              <p>Price: $<span>120</span></p>
+              <div class="card-actions justify-end">
+                <button onclick="addToCart(this)" class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div>
+           </div>
+        </div>
+
+
+        <div>
+          <h2 class="text-3xl">
+            Total Added Products
+            <span class="text-blue-500" id="total-added-products">o</span>
+          </h2>
+          <div class="overflow-x-auto">
+            <table class="table table-zebra w-full">
+              <!-- head -->
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Name</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody id="cart-products">
+                <!-- row 1 -->
+               <tr>
+                
+               </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
-</header>
+    </section>
+  </main>
+  <script src="./js/shopping.js"></script>
 </body>
+
 </html>
